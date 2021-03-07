@@ -1,0 +1,56 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: darksalmon;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* timer
+actions */
+
+.timer{
+    color: #fefefe;
+    font-size: 6.5rem;
+    font-weight: 100;
+}
+
+.actions{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.actions > button{
+    min-height: 100px;
+    min-width: 120px;
+    color: #333;
+    background: rgba(255,255,255, .75);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+.actions > button:hover{
+    background: rgba(255,255,255, .90);
+}
+
+.actions > button.primary{
+    grid-column: span 2;
+}
+
+
+.hide{
+    display: none;
+}
